@@ -14,15 +14,15 @@
      - Allow HTTPS (Port 443)
    - Assigned static public IP: 102.37.214.26
 3. **Configured Nginx**:
-   - # System update and Nginx installation
+   - #### System update and Nginx installation
    - sudo apt update && sudo apt upgrade -y
    - sudo apt install nginx -y
-   - # Service management
+   - #### Service management
    - sudo systemctl start nginx
    - sudo systemctl enable nginx
-   - # Custom landing page with CSS animations & HTML Development
+   - #### Custom landing page with CSS animations & HTML Development
    - sudo nano /var/www/html/index.html
-   - # File Permission
+   - #### File Permission
    - sudo chmod 644 /var/www/html/index.html
    - sudo chown www-data:www-data /var/www/html/index.html
    - HTTPS implementation and encrypt SSL (Certbot)
