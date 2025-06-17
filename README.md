@@ -13,7 +13,8 @@
      - Allow HTTP (Port 80)
      - Allow HTTPS (Port 443)
    - Assigned static public IP: 102.37.214.26
-3. **Configured Nginx**:
+     
+2. **Configured Nginx**:
    - #### System update and Nginx installation
       - sudo apt update && sudo apt upgrade -y
       - sudo apt install nginx -y
@@ -26,7 +27,8 @@
       - sudo chmod 644 /var/www/html/index.html
       - sudo chown www-data:www-data /var/www/html/index.html
       - HTTPS implementation and encrypt SSL (Certbot)
-4. **Security**:
+        
+3. **Security**:
    - Restricted file permissions (chmod 644)
    - Enabled UFW firewall
    - sudo ufw allow 'Nginx Full'
