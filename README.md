@@ -35,8 +35,21 @@
    - sudo ufw allow 'OpenSSH'
    - sudo ufw enable
 
+4. **Bonus: Reverse Proxy (Node.js)**
+   - ... location /api {
+    proxy_pass http://localhost:3000;
+    proxy_set_header Host $host;
+   }
+   - curl http://localhost:3000      # Direct access
+   - curl http://localhost/api      # Proxied access
+
 ## Access
 - **Public IP:** 102.37.214.26
 - **HTTPS:** https://102-37-214-26.nip.io
 
 ![Screenshot](Screenshot.png)
+
+- API Endpoint: http://102.37.214.26/api
+
+![api-Screenshot](api-Screenshot.png)
+
