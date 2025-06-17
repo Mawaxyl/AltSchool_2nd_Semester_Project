@@ -15,17 +15,17 @@
    - Assigned static public IP: 102.37.214.26
 3. **Configured Nginx**:
    - #### System update and Nginx installation
-   - sudo apt update && sudo apt upgrade -y
-   - sudo apt install nginx -y
+      - sudo apt update && sudo apt upgrade -y
+      - sudo apt install nginx -y
    - #### Service management
-   - sudo systemctl start nginx
-   - sudo systemctl enable nginx
+      - sudo systemctl start nginx
+      - sudo systemctl enable nginx
    - #### Custom landing page with CSS animations & HTML Development
-   - sudo nano /var/www/html/index.html
+      - sudo nano /var/www/html/index.html
    - #### File Permission
-   - sudo chmod 644 /var/www/html/index.html
-   - sudo chown www-data:www-data /var/www/html/index.html
-   - HTTPS implementation and encrypt SSL (Certbot)
+      - sudo chmod 644 /var/www/html/index.html
+      - sudo chown www-data:www-data /var/www/html/index.html
+      - HTTPS implementation and encrypt SSL (Certbot)
 4. **Security**:
    - Restricted file permissions (chmod 644)
    - Enabled UFW firewall
